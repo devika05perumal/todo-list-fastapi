@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>To-Do List</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>📝 To-Do List</h1>
+
+
+    <!-- LOGIN -->
+
+    <div
+        id="loginSection"
+        class="card"
+    >
+
+        <h2>Login</h2>
+
+        <input
+            type="text"
+            id="loginUsername"
+            placeholder="Username"
+        >
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+        >
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <p>
+            Don't have an account?
+
+            <span onclick="showRegister()">
+                Register
+            </span>
+        </p>
+
+        <p id="loginMessage"></p>
+
+    </div>
+
+
+    <!-- REGISTER -->
+
+    <div
+        id="registerSection"
+        class="card hidden"
+    >
+
+        <h2>Register</h2>
+
+        <input
+            type="text"
+            id="registerUsername"
+            placeholder="Username"
+        >
+
+        <input
+            type="password"
+            id="registerPassword"
+            placeholder="Password"
+        >
+
+        <button onclick="register()">
+            Register
+        </button>
+
+        <p>
+
+            Already have an account?
+
+            <span onclick="showLogin()">
+                Login
+            </span>
+
+        </p>
+
+        <p id="registerMessage"></p>
+
+    </div>
+
+
+    <!-- TODO SECTION -->
+
+    <div
+        id="todoSection"
+        class="hidden"
+    >
+
+        <div class="header">
+
+            <h2>
+                My Todos
+            </h2>
+
+            <button
+                onclick="logout()"
+                class="logout"
+            >
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- ADD TODO -->
+
+        <div class="card">
+
+            <h3>
+                Add New Todo
+            </h3>
+
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Todo title"
+            >
+
+
+            <textarea
+                id="description"
+                placeholder="Todo description"
+            ></textarea>
+
+
+            <button onclick="addTodo()">
+                Add Todo
+            </button>
+
+
+            <p id="todoMessage"></p>
+
+        </div>
+
+
+        <!-- TODO LIST -->
+
+        <div class="card">
+
+            <h3>
+                Todo List
+            </h3>
+
+
+            <div id="todoList">
+
+                <p>
+                    No todos found.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f4f7;
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: 40px auto;
+}
+
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h2,
+.card h3 {
+
+    margin-top: 0;
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+textarea {
+
+    height: 100px;
+
+    resize: none;
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    opacity: 0.9;
+}
+
+
+p span {
+
+    color: #2563eb;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.hidden {
+
+    display: none;
+}
+
+
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.header h2 {
+
+    margin: 0;
+}
+
+
+.logout {
+
+    width: auto;
+
+    background: #dc2626;
+
+    padding: 8px 18px;
+}
+
+
+.todo-item {
+
+    background: #f8fafc;
+
+    border: 1px solid #ddd;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+}
+
+
+.todo-item h4 {
+
+    margin: 0 0 8px 0;
+}
+
+
+.todo-item p {
+
+    margin: 5px 0;
+}
+
+
+.todo-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+.todo-buttons button {
+
+    margin: 0;
+
+    width: auto;
+
+    padding: 8px 15px;
+}
+
+
+.edit {
+
+    background: #f59e0b;
+}
+
+
+.delete {
+
+    background: #dc2626;
+}
+
+
+.complete {
+
+    background: #16a34a;
+}
+
+
+#loginMessage,
+#registerMessage,
+#todoMessage {
+
+    font-weight: bold;
+}
