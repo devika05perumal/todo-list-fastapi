@@ -1,6 +1,6 @@
 # 📝 To-Do List Application
 
-A simple and user-friendly **To-Do List web application** developed using *FastAPI, HTML, CSS, and JavaScript**.
+A simple and user-friendly **To-Do List web application** developed using **FastAPI, HTML, CSS, and JavaScript**.
 
 The application allows users to create, manage, update, and delete their daily tasks.
 
@@ -149,10 +149,6 @@ This project was developed to practice:
 
 **Devika P**
 
-MCA Graduate | Fresher
-
 GitHub: [@devika05perumal](https://github.com/devika05perumal)
 
----
 
-⭐ If you find this project useful, feel free to star the repository!
